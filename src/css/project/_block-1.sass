@@ -18,8 +18,10 @@
   @media(min-resolution: 2dppx) and (min-width: 768px)
     background-image: url('../images/backgrounds/block_1/desktop@2x.jpg')
 
-  @media(min-width: 1200px)
+  @media(min-width: 1024px)
     overflow: hidden
+
+  @media(min-width: 1200px)
     padding-top: 250px
     padding-bottom: 90px
 
@@ -43,7 +45,7 @@
     z-index: 2
 
     &::after
-      @media(min-width: 1200px)
+      @media(min-width: 1024px)
         background: url('../images/backgrounds/block_1/shade.svg') no-repeat 0 0 transparent
         content: ''
         height: 2959px
@@ -51,9 +53,12 @@
         position: absolute
         right: 0
         top: 50%
-        transform: translate(5.25%, -50%)
+        transform: translate(7.45%, -50%)
         width: 3630px
         z-index: -1
+
+      @media(min-width: 1200px)
+        transform: translate(4.75%, -50%)
 
   &__text-block
     color: #fff
@@ -73,6 +78,7 @@
     @media(min-width: 1200px)
       font-size: 120px
       line-height: 100px
+      text-indent: -6px
 
   &__text
     margin-bottom: 24px

@@ -1,6 +1,6 @@
 .block-4
   overflow: hidden
-  position: relative    
+  position: relative
 
   &::before
     content: ''
@@ -18,7 +18,7 @@
     @media(min-width: 600px)
       transform: skewY(5deg)
 
-    @media(min-width: 1200px)
+    @media(min-width: 1024px)
       display: none
 
   &::after
@@ -35,13 +35,13 @@
     @media(min-width: 768px)
       background-color: #E3DAD7
 
-    @media(min-width: 1200px)
+    @media(min-width: 1024px)
       display: none
 
   &__inner
     margin-left: auto
     margin-right: auto
-    max-width: 1010px
+    max-width: 1230px
     padding-left: 20px
     padding-right: 20px
     padding-bottom: 50px
@@ -57,7 +57,7 @@
       padding-bottom: 90px
 
     &::after
-      @media(min-width: 1200px)
+      @media(min-width: 1024px)
         background: url('../images/backgrounds/block_4/shade.svg') no-repeat 0 0 transparent
         content: ''
         height: 2959px
@@ -65,9 +65,12 @@
         position: absolute
         right: 0
         top: 50%
-        transform: translate(3.2%, -50%)
+        transform: translate(4.25%, -50%)
         width: 3630px
         z-index: -1
+
+      @media(min-width: 1200px)
+        transform: translate(0.15%, -50%)
 
   &__text-block
     @media(min-width: 600px)

@@ -5,7 +5,7 @@
   position: relative
   z-index: 1
 
-  @media(min-width: 1200px)
+  @media(min-width: 1024px)
     background-color: $main-color
     overflow: hidden
     padding-top: 85px
@@ -28,7 +28,7 @@
     @media(min-width: 600px)
       transform: skewY(5deg)
 
-    @media(min-width: 1200px)
+    @media(min-width: 1024px)
       display: none
 
   &__inner
@@ -41,7 +41,7 @@
     z-index: 1
 
     &::after
-      @media(min-width: 1200px)
+      @media(min-width: 1024px)
         background: url('../images/backgrounds/block_3/shade.svg') no-repeat 0 0 transparent
         content: ''
         height: 2959px
@@ -49,9 +49,12 @@
         position: absolute
         right: 0
         top: 50%
-        transform: translate(-12.445%, -50%)
+        transform: translate(-5.95%, -50%)
         width: 3630px
         z-index: -1
+
+      @media(min-width: 1200px)
+        transform: translate(-12.445%, -50%)
 
   &__title
     color: #E3DAD7
